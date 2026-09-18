@@ -1,0 +1,1320 @@
+<!doctype html>
+<html
+  lang="tr"
+  data-theme="otovoi"
+  data-wordmark="split"
+  data-mark="none"
+  data-site-font="inter"
+  data-logo-font="oxanium"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Anti-FOUC: set color scheme before first paint -->
+    <script>
+      (function () {
+        var s = localStorage.getItem('otovoi-color-scheme');
+        document.documentElement.dataset.colorScheme =
+          s === 'dark' ? 'dark' : s === 'light' ? 'light' :
+          window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }());
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oto Tamirhane Programı ve Servis Takip Yazılımı | Otovoi</title>
+    <meta
+      name="description"
+      content="Otovoi; oto tamir, kaporta-boya ve servis işletmeleri için plaka bazlı iş, müşteri, araç, fotoğraf, tahsilat ve finans takip yazılımıdır."
+    />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="theme-color" content="#0b1218" />
+    <link rel="canonical" href="https://otovoi.com/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:site_name" content="Otovoi" />
+    <meta property="og:title" content="Oto Tamirhane Programı ve Servis Takip Yazılımı | Otovoi" />
+    <meta
+      property="og:description"
+      content="Plakadan tahsile; atölyenizin iş, müşteri, araç, fotoğraf ve finans yönetimi tek panelde."
+    />
+    <meta property="og:url" content="https://otovoi.com/" />
+    <meta property="og:image" content="https://otovoi.com/images/otovoi-before-after.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="576" />
+    <meta property="og:image:alt" content="Otovoi ile kayıt altına alınan araç onarımının önce ve sonra görünümü" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@otovoi" />
+    <meta name="twitter:title" content="Oto Tamirhane Programı ve Servis Takip Yazılımı | Otovoi" />
+    <meta
+      name="twitter:description"
+      content="Plakadan tahsile; atölyenizin iş, müşteri, araç, fotoğraf ve finans yönetimi tek panelde."
+    />
+    <meta name="twitter:image" content="https://otovoi.com/images/otovoi-before-after.webp" />
+    <meta name="twitter:image:alt" content="Otovoi ile kayıt altına alınan araç onarımının önce ve sonra görünümü" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Oxanium:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://otovoi.com/#organization",
+            "name": "Otovoi",
+            "url": "https://otovoi.com/",
+            "logo": "https://otovoi.com/favicon.svg",
+            "email": "destek@otovoi.com",
+            "telephone": "+90-850-210-4715",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Fenerbahçe, Growth Plaza, Iğrıp Sk. No: 13",
+              "postalCode": "34726",
+              "addressLocality": "Kadıköy",
+              "addressRegion": "İstanbul",
+              "addressCountry": "TR"
+            },
+            "sameAs": [
+              "https://www.facebook.com/otovoi/",
+              "https://www.instagram.com/otovoi_/",
+              "https://x.com/otovoi"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer support",
+              "email": "destek@otovoi.com",
+              "telephone": "+90-850-210-4715",
+              "availableLanguage": "Turkish"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://otovoi.com/#website",
+            "name": "Otovoi",
+            "url": "https://otovoi.com/",
+            "inLanguage": "tr",
+            "publisher": {
+              "@id": "https://otovoi.com/#organization"
+            }
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://otovoi.com/#software",
+            "name": "Otovoi",
+            "url": "https://otovoi.com/",
+            "applicationCategory": "BusinessApplication",
+            "applicationSubCategory": "Automotive workshop management software",
+            "operatingSystem": "Web",
+            "inLanguage": "tr",
+            "description": "Oto tamir, kaporta-boya ve servis işletmeleri için plaka bazlı iş, müşteri, araç, fotoğraf, tahsilat ve finans takip yazılımı.",
+            "provider": {
+              "@id": "https://otovoi.com/#organization"
+            },
+            "audience": {
+              "@type": "BusinessAudience",
+              "audienceType": "Otomotiv servis ve onarım işletmeleri"
+            },
+            "offers": {
+              "@type": "Offer",
+              "url": "https://app.otovoi.com/signin",
+              "price": "1000",
+              "priceCurrency": "TRY",
+              "category": "subscription",
+              "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "price": "1000",
+                "priceCurrency": "TRY",
+                "billingDuration": "P1M",
+                "valueAddedTaxIncluded": false
+              }
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Otovoi kimler için?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oto tamirhaneleri, kaporta-boya işletmeleri, oto elektrik, lastik-jant ve hızlı servis atölyeleri için tasarlanmış iş yönetim yazılımıdır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Otovoi ile hangi işleri takip edebilirim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Açık, devam eden, tamamlanan veya iptal edilen işleri; işçilik, parça, fotoğraf, belge ve ödeme bilgileriyle birlikte takip edebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Tamirhane için uygun mu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Müşteri ve araç kabulü, onarım notları, işçilik ve parça kalemleri, iş durumu ve tahsilat aynı kayıt üzerinden yönetilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Oto kaporta ve boya işleri takip edilebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Hasar ve onarım notlarını kaydedebilir, önce-süreç-sonra fotoğraflarını ilgili işe ekleyebilir ve iş durumunu takip edebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Araç ve müşteri geçmişini görebilir miyim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Müşteri kartında iletişim ve araç bilgilerini; araç kaydında ise ilişkilendirilmiş servis işlerini tek yerde görüntüleyebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Finans ve alacak takibi yapılabilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Alacak ve borçları, gelir-gider hareketlerini, nakit ve banka kasalarını iş kayıtlarıyla birlikte takip edebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Telefondan kullanabilir miyim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Otovoi tarayıcı üzerinden telefon, tablet ve bilgisayarda kullanılabilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kurulum gerekiyor mu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. Ek bir program kurmadan hesap oluşturup tarayıcı üzerinden müşteri, araç ve iş eklemeye başlayabilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ücretsiz deneme nasıl çalışıyor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hesabınızı oluşturduğunuzda tüm özellikleri 14 gün boyunca ücretsiz deneyebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kredi kartı gerekiyor mu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. 14 günlük ücretsiz denemeyi başlatmak için kredi kartı bilgisi gerekmez."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Verilerim güvende mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "İşletme verileri üyelik ve şirket kimliği kontrolleriyle ayrılır. Oturumlar güvenli çerezler ve HTTPS üzerinden korunur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Destek alabilir miyim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. destek@otovoi.com adresinden veya +90 (850) 210 4715 numarasından bize ulaşabilirsiniz."
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/main-Ix8fTr6m.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-d_SHgkln.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#icerik">İçeriğe atla</a>
+
+    <header class="topbar" data-topbar>
+      <div class="shell topbar__inner">
+        <a class="wordmark" href="#üst" data-style="split" data-mark="none" aria-label="Otovoi ana sayfa" lang="en">
+          <span class="wordmark__text">
+            <span class="wordmark__oto">Oto</span><span class="wordmark__voi">voi</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Sayfa">
+          <a href="#ozellikler">Özellikler</a>
+          <a href="#nasil">Nasıl çalışır</a>
+          <a href="#fiyatlar">Fiyatlar</a>
+          <a href="#sss">SSS</a>
+        </nav>
+        <div class="topbar__actions topbar__actions--desktop">
+          <button class="theme-toggle" type="button" aria-label="Koyu temaya geç" aria-pressed="false" data-theme-toggle>
+            <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+            </svg>
+            <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+          <a class="btn btn--ghost btn--sm" href="https://app.otovoi.com/signin">Panele giriş</a>
+          <a class="btn btn--primary btn--sm" href="https://app.otovoi.com/signin">14 gün ücretsiz başla</a>
+        </div>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Menüyü aç"
+          aria-expanded="false"
+          aria-controls="mobile-navigation"
+          data-nav-toggle
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobile-navigation" aria-hidden="true" data-mobile-nav>
+        <div class="shell mobile-nav__inner">
+          <nav aria-label="Mobil sayfa menüsü">
+            <a href="#ozellikler"><span>01</span>Özellikler</a>
+            <a href="#nasil"><span>02</span>Nasıl çalışır</a>
+            <a href="#fiyatlar"><span>03</span>Fiyatlar</a>
+            <a href="#sss"><span>04</span>SSS</a>
+          </nav>
+          <div class="mobile-nav__actions">
+            <a class="button button--secondary" href="https://app.otovoi.com/signin">Panele giriş</a>
+            <a class="button button--primary" href="https://app.otovoi.com/signin">14 gün ücretsiz başla</a>
+          </div>
+          <div class="mobile-nav__toggle-row">
+            <button class="theme-toggle" type="button" aria-label="Koyu temaya geç" aria-pressed="false" data-theme-toggle>
+              <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+              </svg>
+              <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </button>
+            <span id="theme-toggle-label-mobile">Koyu tema</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="icerik">
+      <section class="hero" id="üst" aria-labelledby="hero-heading">
+        <div class="hero__atmosphere" aria-hidden="true">
+          <div class="hero__grid-lines"></div>
+        </div>
+        <div class="shell hero__grid">
+          <div class="hero__copy reveal is-visible">
+            <p class="section-label hero__label">Atölye operasyon sistemi</p>
+            <h1 class="hero__headline" id="hero-heading">Plakadan tahsile, atölyenin tüm işi tek yerde.</h1>
+            <p class="hero__lede">
+              Oto tamir, kaporta-boya ve servis işletmeleri için iş, müşteri, araç, fotoğraf ve finans yönetimi.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="https://app.otovoi.com/signin">14 gün ücretsiz başla</a>
+              <a class="btn btn--ghost" href="https://app.otovoi.com/signin">Panele giriş</a>
+            </div>
+            <ul class="hero__trust" aria-label="Ücretsiz deneme bilgileri">
+              <li>Kredi kartı gerekmez</li>
+              <li>Dakikalar içinde hazır</li>
+              <li>Mobil uyumlu</li>
+            </ul>
+          </div>
+
+          <div class="hero__visual reveal is-visible">
+            <article class="ops-demo" aria-label="Otovoi iş ve tahsilat ekranı örneği">
+              <header class="ops-demo__topbar">
+                <div class="ops-demo__brand">
+                  <span class="ops-demo__brand-mark" aria-hidden="true"></span>
+                  <strong>OTOVOI</strong>
+                  <span>OPERASYON</span>
+                </div>
+                <nav class="ops-demo__nav" aria-label="Örnek panel menüsü">
+                  <span class="is-active">İşler</span>
+                  <span>Müşteriler</span>
+                  <span>Finans</span>
+                </nav>
+                <span class="ops-demo__today">Bugün · 12 iş</span>
+              </header>
+
+              <div class="ops-demo__workspace">
+                <div class="ops-demo__search-block">
+                  <label class="ops-demo__search-label">Plaka veya müşteri ara</label>
+                  <div class="ops-demo__search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="m21 21-4.35-4.35m2.35-5.15a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/>
+                    </svg>
+                    <span class="ops-demo__search-text">34 ABC 123</span>
+                    <kbd>⌘ K</kbd>
+                  </div>
+                </div>
+
+                <div class="ops-demo__result">
+                  <section class="ops-demo__job" aria-labelledby="demo-job-title">
+                    <div class="ops-demo__job-head">
+                      <div>
+                        <p class="ops-demo__overline">Aktif iş kaydı</p>
+                        <p class="ops-demo__title" id="demo-job-title">Ahmet Yılmaz</p>
+                      </div>
+                      <div class="ops-demo__status" aria-label="Durum: Devam ediyor">
+                        <span class="status-badge status-badge--open ops-demo__status-old" aria-hidden="true">Açık</span>
+                        <span class="status-badge status-badge--progress ops-demo__status-current" aria-hidden="true">Devam ediyor</span>
+                      </div>
+                    </div>
+
+                    <div class="ops-demo__vehicle">
+                      <div class="ops-demo__plate" aria-label="Plaka 34 ABC 123">
+                        <span>TR</span>
+                        <strong>34 ABC 123</strong>
+                      </div>
+                      <div>
+                        <strong>Volkswagen Passat</strong>
+                        <span>Kaporta · Sol ön çamurluk</span>
+                      </div>
+                    </div>
+
+                    <ol class="ops-demo__flow" aria-label="İş süreci">
+                      <li class="is-done"><span>1</span>Plaka</li>
+                      <li class="is-done"><span>2</span>İş</li>
+                      <li class="is-active"><span>3</span>Durum</li>
+                      <li><span>4</span>Tahsilat</li>
+                    </ol>
+
+                    <dl class="ops-demo__details">
+                      <div>
+                        <dt>İş no</dt>
+                        <dd>OTV-240918</dd>
+                      </div>
+                      <div>
+                        <dt>Teslim tarihi</dt>
+                        <dd>18 Eylül</dd>
+                      </div>
+                      <div>
+                        <dt>Fotoğraflar</dt>
+                        <dd>8 kayıt</dd>
+                      </div>
+                    </dl>
+                  </section>
+
+                  <aside class="ops-demo__payment" aria-label="Tahsilat özeti">
+                    <div class="ops-demo__payment-head">
+                      <div>
+                        <p class="ops-demo__overline">Tahsilat özeti</p>
+                        <p class="ops-demo__title">İş toplamı</p>
+                      </div>
+                      <span class="ops-demo__currency">TRY</span>
+                    </div>
+                    <dl class="ops-demo__amounts">
+                      <div>
+                        <dt>Toplam</dt>
+                        <dd>₺18.400</dd>
+                      </div>
+                      <div>
+                        <dt>Tahsil edilen</dt>
+                        <dd class="ops-demo__amount-update" aria-label="12.000 Türk lirası">
+                          <span class="ops-demo__amount-old" aria-hidden="true">₺0</span>
+                          <span class="ops-demo__amount-current" aria-hidden="true">₺12.000</span>
+                        </dd>
+                      </div>
+                    </dl>
+                    <div class="ops-demo__payment-progress" aria-hidden="true">
+                      <span></span>
+                    </div>
+                    <div class="ops-demo__remaining">
+                      <span>Kalan</span>
+                      <strong>₺6.400</strong>
+                    </div>
+                    <div class="ops-demo__payment-action">
+                      <span class="ops-demo__check" aria-hidden="true">✓</span>
+                      <span>
+                        <strong>Ödeme kaydedildi</strong>
+                        <small>Nakit · bugün 14:32</small>
+                      </span>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust" aria-label="Otovoi ürün avantajları">
+        <div class="shell">
+          <ol class="value-strip reveal">
+            <li class="value-strip__item">
+              <div class="value-strip__meta">
+                <span class="value-strip__number">01</span>
+                <svg class="value-strip__indicator" viewBox="0 0 40 24" aria-hidden="true">
+                  <rect x="1" y="3" width="38" height="18" rx="2"/>
+                  <path d="M7 8h4M7 12h4M7 16h4M16 9h17M16 15h11"/>
+                </svg>
+              </div>
+              <h2>Plaka odaklı</h2>
+              <p>Araç ve iş geçmişine saniyeler içinde ulaş.</p>
+            </li>
+            <li class="value-strip__item">
+              <div class="value-strip__meta">
+                <span class="value-strip__number">02</span>
+                <svg class="value-strip__indicator" viewBox="0 0 40 24" aria-hidden="true">
+                  <path d="M4 12h28M27 7l5 5-5 5"/>
+                  <circle cx="4" cy="12" r="2.5"/>
+                  <circle cx="18" cy="12" r="2.5"/>
+                  <circle cx="32" cy="12" r="2.5"/>
+                </svg>
+              </div>
+              <h2>İşten tahsilata</h2>
+              <p>İş kaydı, durum, gelir ve alacak aynı akışta.</p>
+            </li>
+            <li class="value-strip__item">
+              <div class="value-strip__meta">
+                <span class="value-strip__number">03</span>
+                <svg class="value-strip__indicator" viewBox="0 0 40 24" aria-hidden="true">
+                  <path d="M5 5.5h30v15H5zM11 2v7M29 2v7M5 10h30"/>
+                  <path d="m14 15 3 3 8-8"/>
+                </svg>
+              </div>
+              <h2>14 gün ücretsiz</h2>
+              <p>Tüm özellikleri dene. Kredi kartı gerekmez.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--problem" id="sorun" aria-labelledby="problem-title">
+        <div class="shell workflow-story reveal">
+          <header class="workflow-story__header">
+            <div>
+              <p class="section__eyebrow">Dağınıklıktan operasyona</p>
+              <h2 class="section__title" id="problem-title">Defter ve WhatsApp’ta kaybolan işler biter.</h2>
+            </div>
+            <p class="workflow-story__statement">Genel ERP değil; <strong>atölye operasyonu.</strong></p>
+          </header>
+
+          <div class="workflow-story__comparison">
+            <section class="workflow-story__before" aria-labelledby="before-title">
+              <div class="workflow-story__panel-head">
+                <span>Önce Otovoi</span>
+                <strong id="before-title">Bilgi her yerde</strong>
+              </div>
+              <ul class="workflow-story__scatter" aria-label="Dağınık çalışma araçları">
+                <li class="workflow-story__fragment workflow-story__fragment--notebook">
+                  <span>Defter</span>
+                  <strong>34 ABC 123</strong>
+                  <small>Sol kapı · boya?</small>
+                </li>
+                <li class="workflow-story__fragment workflow-story__fragment--message">
+                  <span>WhatsApp</span>
+                  <strong>Ahmet Usta</strong>
+                  <small>Fotoğraflar burada mı?</small>
+                </li>
+                <li class="workflow-story__fragment workflow-story__fragment--sheet">
+                  <span>Excel</span>
+                  <strong>İş #184</strong>
+                  <small>Tahsilat alanı boş</small>
+                </li>
+                <li class="workflow-story__fragment workflow-story__fragment--phone">
+                  <span>Telefon</span>
+                  <strong>3 cevapsız</strong>
+                  <small>Müşteri geri arayacak</small>
+                </li>
+                <li class="workflow-story__fragment workflow-story__fragment--photos">
+                  <span>Kağıt fotoğraflar</span>
+                  <strong>Hangi araç?</strong>
+                  <small>Dosya eşleşmedi</small>
+                </li>
+                <li class="workflow-story__fragment workflow-story__fragment--memory">
+                  <span>Kafadan takip</span>
+                  <strong>Cuma teslim</strong>
+                  <small>Durum belirsiz</small>
+                </li>
+              </ul>
+            </section>
+
+            <div class="workflow-story__transfer" aria-hidden="true">
+              <span></span>
+              <svg viewBox="0 0 48 24">
+                <path d="M2 12h40M34 4l8 8-8 8"/>
+              </svg>
+            </div>
+
+            <section class="workflow-story__after" aria-labelledby="after-title">
+              <div class="workflow-story__panel-head">
+                <span>Otovoi ile</span>
+                <strong id="after-title">Her şey plakaya bağlı</strong>
+              </div>
+              <div class="workflow-story__record">
+                <div class="workflow-story__plate">
+                  <span>TR</span>
+                  <strong>34 ABC 123</strong>
+                  <small>Tek araç kaydı</small>
+                </div>
+                <ul class="workflow-story__connections">
+                  <li>
+                    <span>İş</span>
+                    <strong>Kaporta · #184</strong>
+                    <small>Devam ediyor</small>
+                  </li>
+                  <li>
+                    <span>Müşteri</span>
+                    <strong>Ahmet Yılmaz</strong>
+                    <small>Tek iletişim kaydı</small>
+                  </li>
+                  <li>
+                    <span>Fotoğraf</span>
+                    <strong>8 görsel</strong>
+                    <small>Önce · süreç · sonra</small>
+                  </li>
+                  <li>
+                    <span>Finans</span>
+                    <strong>₺6.400 kalan</strong>
+                    <small>Tahsilat güncel</small>
+                  </li>
+                  <li>
+                    <span>Arşiv</span>
+                    <strong>3 geçmiş iş</strong>
+                    <small>Plakadan erişilebilir</small>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-showcase" id="ozellikler" aria-labelledby="features-title">
+        <div class="shell feature-showcase__inner">
+          <header class="feature-showcase__header reveal">
+            <p class="section__eyebrow">Ürünün içinde</p>
+            <h2 class="section__title" id="features-title">Atölyenin dört kritik akışı.</h2>
+            <p>Otovoi yalnızca kayıt tutmaz. Araç kabulünden tahsilata kadar işi aynı operasyon çizgisinde yürütür.</p>
+          </header>
+
+          <div class="product-stories">
+            <article class="product-story reveal">
+              <div class="product-story__copy">
+                <span class="product-story__number">01</span>
+                <p class="product-story__label">İş &amp; Plaka</p>
+                <h3>Plakayı yaz. Aktif işe anında ulaş.</h3>
+                <p>Araç, müşteri ve iş durumu tek aramada görünür. Durumu sahadaki ilerlemeye göre güncelle.</p>
+                <p class="product-story__interaction">
+                  <span aria-hidden="true">↳</span>
+                  Durum düğmesiyle iş akışını değiştir.
+                </p>
+              </div>
+
+              <div class="product-story__visual plate-demo" data-plate-demo>
+                <div class="demo-toolbar">
+                  <span>İş arama</span>
+                  <small>12 aktif kayıt</small>
+                </div>
+                <div class="plate-demo__body">
+                  <label class="demo-label" for="feature-plate-search">Plaka veya müşteri</label>
+                  <div class="plate-demo__search">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/></svg>
+                    <input id="feature-plate-search" value="34 ABC 123" readonly />
+                    <span>1 sonuç</span>
+                  </div>
+                  <div class="plate-demo__result">
+                    <div class="plate-demo__result-head">
+                      <div class="demo-plate"><span>TR</span><strong>34 ABC 123</strong></div>
+                      <button class="status-badge status-badge--progress" type="button" data-status-toggle>Devam ediyor</button>
+                    </div>
+                    <div class="plate-demo__identity">
+                      <div>
+                        <span>Müşteri</span>
+                        <strong>Ahmet Yılmaz</strong>
+                      </div>
+                      <div>
+                        <span>İş</span>
+                        <strong>Kaporta · #184</strong>
+                      </div>
+                      <div>
+                        <span>Teslim</span>
+                        <strong>18 Eylül</strong>
+                      </div>
+                    </div>
+                    <div class="plate-demo__status-line" aria-label="İş durumu">
+                      <span class="is-done">Açık</span>
+                      <span class="is-current" data-status-step>Devam ediyor</span>
+                      <span>Tamamlandı</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-story product-story--reverse reveal">
+              <div class="product-story__copy">
+                <span class="product-story__number">02</span>
+                <p class="product-story__label">Müşteri &amp; Araç</p>
+                <h3>Müşteriyi değil, tüm araç geçmişini gör.</h3>
+                <p>İletişim, araç bilgileri ve önceki işler aynı profilde. Bir geçmiş işe dokun, detayını aç.</p>
+                <p class="product-story__interaction">
+                  <span aria-hidden="true">↳</span>
+                  Geçmiş işlerden birini seç.
+                </p>
+              </div>
+
+              <div class="product-story__visual history-demo" data-history-demo>
+                <div class="demo-toolbar">
+                  <span>Müşteri profili</span>
+                  <small>3 araç · 7 iş</small>
+                </div>
+                <div class="history-demo__body">
+                  <div class="history-demo__profile">
+                    <span class="history-demo__avatar" aria-hidden="true">AY</span>
+                    <div>
+                      <strong>Ahmet Yılmaz</strong>
+                      <span>0532 555 24 18</span>
+                    </div>
+                    <span class="badge badge--accent">Aktif müşteri</span>
+                  </div>
+                  <div class="history-demo__vehicle">
+                    <div class="demo-plate"><span>TR</span><strong>34 ABC 123</strong></div>
+                    <div><strong>Volkswagen Passat</strong><span>2019 · 1.6 TDI</span></div>
+                  </div>
+                  <div class="history-demo__content">
+                    <div class="history-demo__list" aria-label="Geçmiş işler">
+                      <button type="button" aria-pressed="true" data-history-item data-job="Kaporta onarımı" data-date="12 Eylül 2026" data-total="₺18.400">
+                        <span>12 Eyl</span><strong>Kaporta</strong><small>Devam ediyor</small>
+                      </button>
+                      <button type="button" aria-pressed="false" data-history-item data-job="Periyodik bakım" data-date="03 Mart 2026" data-total="₺7.250">
+                        <span>03 Mar</span><strong>Bakım</strong><small>Tamamlandı</small>
+                      </button>
+                      <button type="button" aria-pressed="false" data-history-item data-job="Fren kontrolü" data-date="18 Kasım 2025" data-total="₺3.800">
+                        <span>18 Kas</span><strong>Fren</strong><small>Tamamlandı</small>
+                      </button>
+                    </div>
+                    <dl class="history-demo__detail" aria-live="polite">
+                      <div><dt>Seçili iş</dt><dd data-history-job>Kaporta onarımı</dd></div>
+                      <div><dt>Tarih</dt><dd data-history-date>12 Eylül 2026</dd></div>
+                      <div><dt>Toplam</dt><dd data-history-total>₺18.400</dd></div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-story reveal">
+              <div class="product-story__copy">
+                <span class="product-story__number">03</span>
+                <p class="product-story__label">Önce / Sonra Fotoğraf</p>
+                <h3>Her fotoğraf doğru işe bağlı kalır.</h3>
+                <p>Hasarı teslim alırken kaydet, süreç fotoğraflarını ekle ve onarım sonucunu aynı işte karşılaştır.</p>
+                <p class="product-story__interaction">
+                  <span aria-hidden="true">↳</span>
+                  Önce ve sonra görünümünü seç.
+                </p>
+              </div>
+
+              <div class="product-story__visual photo-demo" data-photo-demo>
+                <div class="demo-toolbar">
+                  <span>İş fotoğrafları · OTV-240918</span>
+                  <small>8 görsel</small>
+                </div>
+                <div class="photo-demo__stage" data-photo-stage="split">
+                  <figure class="photo-demo__photo photo-demo__photo--before">
+                    <img
+                      src="/images/otovoi-before-after.webp"
+                      alt="Onarım öncesi hasarlı beyaz araç"
+                      width="1024"
+                      height="576"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption><span>Önce</span><small>12 Eylül · 09:18</small></figcaption>
+                  </figure>
+                  <figure class="photo-demo__photo photo-demo__photo--after">
+                    <img
+                      src="/images/otovoi-before-after.webp"
+                      alt="Onarım sonrası yenilenmiş beyaz araç"
+                      width="1024"
+                      height="576"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <figcaption><span>Sonra</span><small>16 Eylül · 16:42</small></figcaption>
+                  </figure>
+                  <span class="photo-demo__divider" aria-hidden="true"></span>
+                </div>
+                <div class="photo-demo__controls" role="group" aria-label="Fotoğraf görünümü">
+                  <button type="button" aria-pressed="false" data-photo-view="before">Önce</button>
+                  <button type="button" aria-pressed="true" data-photo-view="split">Karşılaştır</button>
+                  <button type="button" aria-pressed="false" data-photo-view="after">Sonra</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-story product-story--reverse reveal">
+              <div class="product-story__copy">
+                <span class="product-story__number">04</span>
+                <p class="product-story__label">Tahsilat &amp; Kasa</p>
+                <h3>İş kapanırken para da netleşir.</h3>
+                <p>Toplam, alınan ödeme ve kalan borç aynı ekranda. Tahsilat işlendiğinde kasa hareketi otomatik görünür.</p>
+                <p class="product-story__interaction">
+                  <span aria-hidden="true">↳</span>
+                  Kalan ödemeyi tahsil et.
+                </p>
+              </div>
+
+              <div class="product-story__visual finance-demo" data-finance-demo>
+                <div class="demo-toolbar">
+                  <span>Tahsilat &amp; kasa</span>
+                  <small>OTV-240918</small>
+                </div>
+                <div class="finance-demo__body">
+                  <div class="finance-demo__summary">
+                    <div><span>İş toplamı</span><strong>₺18.400</strong></div>
+                    <div><span>Tahsil edilen</span><strong data-collected>₺12.000</strong></div>
+                    <div class="is-debt"><span>Kalan borç</span><strong data-debt>₺6.400</strong></div>
+                  </div>
+                  <div class="finance-demo__progress" aria-label="Tahsilat oranı"><span data-payment-progress></span></div>
+                  <div class="finance-demo__ledger">
+                    <div class="finance-demo__ledger-head"><span>Kasa hareketleri</span><strong>Bugün</strong></div>
+                    <div><span>Nakit tahsilat</span><small>14:32</small><strong>+ ₺12.000</strong></div>
+                    <div class="finance-demo__new-row" data-payment-row hidden><span>Kalan ödeme</span><small>Şimdi</small><strong>+ ₺6.400</strong></div>
+                  </div>
+                  <button class="button button--primary finance-demo__action" type="button" data-payment-add>
+                    ₺6.400 tahsil et
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted workflow-use-section" id="nasil" aria-labelledby="how-title">
+        <div class="shell workflow-use-shell">
+          <header class="workflow-use__header reveal">
+            <p class="section__eyebrow">Nasıl çalışır</p>
+            <h2 class="section__title" id="how-title">Bir araç. Tek kayıt. Baştan sona aynı akış.</h2>
+            <p>Otovoi’yi kullanırken plaka, iş ve ödeme birbirinden kopmaz. Kaydırdıkça aynı kaydın nasıl ilerlediğini gör.</p>
+          </header>
+
+          <div class="workflow-use" data-workflow-demo>
+            <div class="workflow-use__stage">
+              <article class="workflow-app" aria-label="Otovoi iş akışının canlı ürün örneği">
+                <header class="workflow-app__topbar">
+                  <span class="workflow-app__brand">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4zM7 10h10M7 14h6"/></svg>
+                    OTOVOI
+                  </span>
+                  <span class="workflow-app__business">Yılmaz Oto Servis</span>
+                  <span class="workflow-app__sync"><i aria-hidden="true"></i> Kaydedildi</span>
+                </header>
+
+                <div class="workflow-app__body">
+                  <ol class="workflow-app__rail" aria-label="İş akışı ilerlemesi">
+                    <li class="is-current" data-workflow-rail><span>01</span><small>İşletme</small></li>
+                    <li data-workflow-rail><span>02</span><small>Araç</small></li>
+                    <li data-workflow-rail><span>03</span><small>İş</small></li>
+                    <li data-workflow-rail><span>04</span><small>Tahsilat</small></li>
+                  </ol>
+
+                  <div class="workflow-app__workspace">
+                    <div class="workflow-app__record">
+                      <span>Aktif operasyon kaydı</span>
+                      <strong data-workflow-record>Yılmaz Oto Servis</strong>
+                    </div>
+
+                    <div class="workflow-app__card workflow-app__card--business is-current" data-workflow-card>
+                      <span class="workflow-app__card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12M8 20v-5h8v5M8 10h2m4 0h2"/></svg>
+                      </span>
+                      <div><small>İşletme profili</small><strong>Yılmaz Oto Servis</strong><span>Kaporta · Boya · Mekanik</span></div>
+                      <span class="workflow-app__state">Hazır</span>
+                    </div>
+
+                    <div class="workflow-app__card workflow-app__card--vehicle is-pending" data-workflow-card>
+                      <span class="workflow-app__card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="m5 16-1 2v2m15-4 1 2v2M5 16h14l-2-6H7l-2 6Zm2 0v1m10-1v1"/></svg>
+                      </span>
+                      <div><small>Araç &amp; müşteri</small><strong class="workflow-app__plate">34 ABC 123</strong><span>Ahmet Yılmaz · Volkswagen Passat</span></div>
+                      <span class="workflow-app__state">Bağlandı</span>
+                    </div>
+
+                    <div class="workflow-app__card workflow-app__card--job is-pending" data-workflow-card>
+                      <span class="workflow-app__card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M14 6 6 14m9-9 4 4-3 3-4-4 3-3ZM5 13l6 6H5v-6Z"/></svg>
+                      </span>
+                      <div><small>İş #184</small><strong>Kaporta onarımı</strong><span>Sol ön çamurluk · Ahmet Usta</span></div>
+                      <span class="workflow-app__state">Devam ediyor</span>
+                    </div>
+
+                    <div class="workflow-app__card workflow-app__card--finance is-pending" data-workflow-card>
+                      <span class="workflow-app__card-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M4 7h16v11H4zM16 11h4v4h-4a2 2 0 0 1 0-4ZM7 7V5h10v2"/></svg>
+                      </span>
+                      <div class="workflow-app__amounts">
+                        <span><small>İş toplamı</small><strong>₺18.400</strong></span>
+                        <span><small>Tahsil edilen</small><strong>₺12.000</strong></span>
+                        <span><small>Kalan</small><strong>₺6.400</strong></span>
+                      </div>
+                      <span class="workflow-app__state">Açık</span>
+                    </div>
+                  </div>
+                </div>
+
+                <footer class="workflow-app__footer">
+                  <span><strong data-workflow-counter>01</strong> / 04</span>
+                  <span data-workflow-label>İşletme hazır</span>
+                  <div class="workflow-app__progress" aria-hidden="true"><span data-workflow-progress></span></div>
+                </footer>
+              </article>
+            </div>
+
+            <ol class="workflow-use__steps">
+              <li class="is-active" data-workflow-step>
+                <span class="workflow-use__number">01</span>
+                <div><h3>İşletmeni aç</h3><p>İşletme bilgilerini ekle, hizmet alanlarını seç ve ekibini çalışmaya hazırla.</p></div>
+              </li>
+              <li data-workflow-step>
+                <span class="workflow-use__number">02</span>
+                <div><h3>Araç ve işi oluştur</h3><p><strong>34 ABC 123</strong> plakasını gir. Müşteri ve araç bilgileri aynı operasyon kaydına bağlansın.</p></div>
+              </li>
+              <li data-workflow-step>
+                <span class="workflow-use__number">03</span>
+                <div><h3>İşi takip et</h3><p>Kaporta işini, sorumlu ustayı ve ilerleme durumunu araç kaydından yönet.</p></div>
+              </li>
+              <li data-workflow-step>
+                <span class="workflow-use__number">04</span>
+                <div><h3>Tahsilatı kapat</h3><p>₺18.400 iş toplamını, ₺12.000 tahsilatı ve kalan ödemeyi aynı yerde sonuçlandır.</p></div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="fiyatlar" aria-labelledby="pricing-title">
+        <div class="shell pricing-shell">
+          <header class="pricing-header reveal">
+            <div>
+              <p class="section__eyebrow">Fiyatlar</p>
+              <h2 class="section__title" id="pricing-title">Net fiyat. Gizli sürpriz yok.</h2>
+            </div>
+            <p>14 gün boyunca tüm özellikleri deneyin. Kredi kartı gerekmez.</p>
+          </header>
+
+          <div class="pricing-plans" aria-label="Otovoi fiyat planları">
+            <article class="pricing-plan pricing-plan--trial reveal">
+              <header class="pricing-plan__header">
+                <div>
+                  <span class="pricing-plan__index">01</span>
+                  <p class="pricing-plan__kind">Başlangıç</p>
+                </div>
+                <h3>Ücretsiz Deneme</h3>
+              </header>
+
+              <div class="pricing-plan__price" aria-label="14 gün için 0 Türk lirası">
+                <span class="pricing-plan__currency">₺</span>
+                <strong>0</strong>
+                <span class="pricing-plan__period">/ 14 gün</span>
+              </div>
+
+              <div class="pricing-plan__features">
+                <p>Deneme kapsamı</p>
+                <ul>
+                  <li><span aria-hidden="true">✓</span>Tüm özellikler</li>
+                  <li><span aria-hidden="true">✓</span>Sınırsız iş kaydı</li>
+                  <li><span aria-hidden="true">✓</span>Müşteri &amp; mali raporlar</li>
+                  <li><span aria-hidden="true">✓</span>Kredi kartı gerekmez</li>
+                </ul>
+              </div>
+
+              <a class="button button--secondary pricing-plan__cta" href="https://app.otovoi.com/signin">
+                Ücretsiz başla
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+
+            <div class="pricing-plans__transition" aria-hidden="true">
+              <span></span>
+              <small>14 gün</small>
+            </div>
+
+            <article class="pricing-plan pricing-plan--professional reveal">
+              <header class="pricing-plan__header">
+                <div>
+                  <span class="pricing-plan__index">02</span>
+                  <p class="pricing-plan__kind">Tam kullanım</p>
+                </div>
+                <h3>Profesyonel</h3>
+              </header>
+
+              <div class="pricing-plan__price" aria-label="Aylık 1000 Türk lirası artı KDV">
+                <span class="pricing-plan__currency">₺</span>
+                <strong>1000</strong>
+                <span class="pricing-plan__period">/ ay <small>+ KDV</small></span>
+              </div>
+
+              <div class="pricing-plan__features">
+                <p>Plan kapsamı</p>
+                <ul>
+                  <li><span aria-hidden="true">✓</span>Sınırsız kullanıcı</li>
+                  <li><span aria-hidden="true">✓</span>Tam iş &amp; müşteri yönetimi</li>
+                  <li><span aria-hidden="true">✓</span>Gelir / gider &amp; alacak</li>
+                  <li><span aria-hidden="true">✓</span>Raporlar</li>
+                </ul>
+              </div>
+
+              <a class="button button--primary pricing-plan__cta" href="https://app.otovoi.com/signin">
+                Hemen başla
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </div>
+
+          <div class="pricing-trust reveal" aria-label="Fiyatlandırma bilgileri">
+            <p><span aria-hidden="true">01</span><strong>Kart gerekmez</strong>Deneme başlangıcında ödeme bilgisi istenmez.</p>
+            <p><span aria-hidden="true">02</span><strong>Tüm özellikler açık</strong>14 gün boyunca ürünün tamamını deneyin.</p>
+            <p><span aria-hidden="true">03</span><strong>KDV bilgisi net</strong>Fiyatlara KDV dahil değildir.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted faq-section" id="sss" aria-labelledby="faq-title">
+        <div class="shell faq-shell">
+          <header class="faq-header reveal">
+            <div>
+              <p class="section__eyebrow">SSS</p>
+              <h2 class="section__title" id="faq-title">Otovoi hakkında merak edilenler.</h2>
+            </div>
+            <p>Ürün, kullanım, deneme ve veri güvenliği hakkında kısa ve doğrudan yanıtlar.</p>
+          </header>
+
+          <div class="faq-layout">
+            <aside class="faq-guide reveal" aria-label="Sık sorulan soru konuları">
+              <span>12 yanıt</span>
+              <p>Atölye operasyonu</p>
+              <ul aria-hidden="true">
+                <li>İş &amp; araç</li>
+                <li>Fotoğraf &amp; finans</li>
+                <li>Kullanım &amp; güvenlik</li>
+              </ul>
+            </aside>
+
+            <div class="faq" data-faq-accordion>
+              <article class="faq__item is-open reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-1" type="button" aria-expanded="true" aria-controls="faq-answer-1" data-faq-toggle>
+                    <span>01</span>Otovoi kimler için?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+                  <div class="faq__content">
+                    <p>Oto tamirhaneleri, kaporta-boya işletmeleri, oto elektrik, lastik-jant ve hızlı servis atölyeleri için tasarlanmış iş yönetim yazılımıdır.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-2" type="button" aria-expanded="false" aria-controls="faq-answer-2" data-faq-toggle>
+                    <span>02</span>Otovoi ile hangi işleri takip edebilirim?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+                  <div class="faq__content">
+                    <p>Açık, devam eden, tamamlanan veya iptal edilen işleri; işçilik, parça, fotoğraf, belge ve ödeme bilgileriyle birlikte takip edebilirsiniz.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-3" type="button" aria-expanded="false" aria-controls="faq-answer-3" data-faq-toggle>
+                    <span>03</span>Tamirhane için uygun mu?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+                  <div class="faq__content">
+                    <p>Evet. Müşteri ve araç kabulü, onarım notları, işçilik ve parça kalemleri, iş durumu ve tahsilat aynı kayıt üzerinden yönetilir.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-4" type="button" aria-expanded="false" aria-controls="faq-answer-4" data-faq-toggle>
+                    <span>04</span>Oto kaporta ve boya işleri takip edilebilir mi?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+                  <div class="faq__content">
+                    <p>Evet. Hasar ve onarım notlarını kaydedebilir, önce-süreç-sonra fotoğraflarını ilgili işe ekleyebilir ve iş durumunu takip edebilirsiniz.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-5" type="button" aria-expanded="false" aria-controls="faq-answer-5" data-faq-toggle>
+                    <span>05</span>Araç ve müşteri geçmişini görebilir miyim?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+                  <div class="faq__content">
+                    <p>Müşteri kartında iletişim ve araç bilgilerini; araç kaydında ise ilişkilendirilmiş servis işlerini tek yerde görüntüleyebilirsiniz.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-6" type="button" aria-expanded="false" aria-controls="faq-answer-6" data-faq-toggle>
+                    <span>06</span>Finans ve alacak takibi yapılabilir mi?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+                  <div class="faq__content">
+                    <p>Evet. Alacak ve borçları, gelir-gider hareketlerini, nakit ve banka kasalarını iş kayıtlarıyla birlikte takip edebilirsiniz.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-7" type="button" aria-expanded="false" aria-controls="faq-answer-7" data-faq-toggle>
+                    <span>07</span>Telefondan kullanabilir miyim?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
+                  <div class="faq__content">
+                    <p>Evet. Otovoi tarayıcı üzerinden telefon, tablet ve bilgisayarda kullanılabilir.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-8" type="button" aria-expanded="false" aria-controls="faq-answer-8" data-faq-toggle>
+                    <span>08</span>Kurulum gerekiyor mu?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
+                  <div class="faq__content">
+                    <p>Hayır. Ek bir program kurmadan hesap oluşturup tarayıcı üzerinden müşteri, araç ve iş eklemeye başlayabilirsiniz.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-9" type="button" aria-expanded="false" aria-controls="faq-answer-9" data-faq-toggle>
+                    <span>09</span>Ücretsiz deneme nasıl çalışıyor?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-9" role="region" aria-labelledby="faq-question-9">
+                  <div class="faq__content">
+                    <p>Hesabınızı oluşturduğunuzda tüm özellikleri 14 gün boyunca ücretsiz deneyebilirsiniz.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-10" type="button" aria-expanded="false" aria-controls="faq-answer-10" data-faq-toggle>
+                    <span>10</span>Kredi kartı gerekiyor mu?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-10" role="region" aria-labelledby="faq-question-10">
+                  <div class="faq__content">
+                    <p>Hayır. 14 günlük ücretsiz denemeyi başlatmak için kredi kartı bilgisi gerekmez.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-11" type="button" aria-expanded="false" aria-controls="faq-answer-11" data-faq-toggle>
+                    <span>11</span>Verilerim güvende mi?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-11" role="region" aria-labelledby="faq-question-11">
+                  <div class="faq__content">
+                    <p>İşletme verileri üyelik ve şirket kimliği kontrolleriyle ayrılır. Oturumlar güvenli çerezler ve HTTPS üzerinden korunur.</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="faq__item reveal" data-faq-item>
+                <h3>
+                  <button id="faq-question-12" type="button" aria-expanded="false" aria-controls="faq-answer-12" data-faq-toggle>
+                    <span>12</span>Destek alabilir miyim?<i aria-hidden="true"></i>
+                  </button>
+                </h3>
+                <div class="faq__panel" id="faq-answer-12" role="region" aria-labelledby="faq-question-12">
+                  <div class="faq__content">
+                    <p>Evet. <a href="mailto:destek@otovoi.com">destek@otovoi.com</a> adresinden veya <a href="tel:+908502104715">+90 (850) 210 4715</a> numarasından bize ulaşabilirsiniz.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="basla" aria-labelledby="cta-title">
+        <div class="final-cta__grid" aria-hidden="true"></div>
+        <div class="shell final-cta__frame reveal">
+          <div class="final-cta__copy">
+            <p class="section-label">Sıradaki iş hazır</p>
+            <h2 id="cta-title">Atölyeni bugün netleştir.</h2>
+            <p>14 gün boyunca tüm özellikleri dene. Kredi kartı gerekmez.</p>
+            <div class="final-cta__actions">
+              <a class="button button--primary" href="https://app.otovoi.com/signin">
+                14 gün ücretsiz başla
+                <span aria-hidden="true">→</span>
+              </a>
+              <a class="button button--secondary" href="https://app.otovoi.com/signin">Panele giriş</a>
+            </div>
+          </div>
+
+          <article class="final-record" aria-label="Tamamlanmış ve tahsil edilmiş Otovoi iş kaydı">
+            <header class="final-record__header">
+              <span class="final-record__brand">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v10H4zM7 10h10M7 14h6"/></svg>
+                OTOVOI
+              </span>
+              <span>İş #184</span>
+              <span class="final-record__saved"><i aria-hidden="true"></i> Kaydedildi</span>
+            </header>
+
+            <div class="final-record__vehicle">
+              <div class="demo-plate"><span>TR</span><strong>34 ABC 123</strong></div>
+              <div>
+                <small>Müşteri · Araç</small>
+                <strong>Ahmet Yılmaz · Volkswagen Passat</strong>
+              </div>
+            </div>
+
+            <ol class="final-record__flow" aria-label="İş sonucu">
+              <li>
+                <span>01</span>
+                <div><small>İş</small><strong>Kaporta</strong></div>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <div><small>Durum</small><strong>Tamamlandı</strong></div>
+              </li>
+              <li>
+                <span aria-hidden="true">✓</span>
+                <div><small>Ödeme</small><strong>Tahsil edildi</strong></div>
+              </li>
+            </ol>
+
+            <footer class="final-record__total">
+              <span><small>İş toplamı</small><strong>₺18.400</strong></span>
+              <span><small>Kalan</small><strong>₺0</strong></span>
+              <span class="status-badge status-badge--done">Kayıt kapandı</span>
+            </footer>
+          </article>
+        </div>
+        <div class="final-cta__rail" aria-hidden="true">
+          <span>İŞ</span><i></i><span>TAMAMLANDI</span><i></i><span>TAHSİL EDİLDİ</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell site-footer__grid">
+        <div>
+          <a class="wordmark" href="#üst" data-style="split" data-mark="none" lang="en">
+            <span class="wordmark__text">
+              <span class="wordmark__oto">Oto</span><span class="wordmark__voi">voi</span>
+            </span>
+          </a>
+          <p class="site-footer__blurb">
+            Otovoi, otomotiv servis sağlayıcıları için özel olarak tasarlanmış kapsamlı bir iş yönetim sistemidir.
+            Oto tamirhaneleri ve servis merkezlerinin operasyonlarını verimli şekilde yönetmelerine yardımcı olur.
+          </p>
+          <div class="social" aria-label="Sosyal medya">
+            <a href="https://www.facebook.com/otovoi/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/otovoi_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm10 2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2Zm-5 3.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2Zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8ZM17.4 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg>
+            </a>
+            <a href="https://x.com/otovoi" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14.7 10.3 22 2h-1.8l-6.3 7.2L8.8 2H2l7.7 11.1L2 22h1.8l6.8-7.7L15.2 22H22l-7.3-11.7Zm-2.4 2.7-.8-1.1L4.6 3.5h2.6l5.1 7.3.8 1.1 6.7 9.6h-2.6l-5.5-7.8Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h2>Hızlı bağlantılar</h2>
+          <ul>
+            <li><a href="#ozellikler">Özellikler</a></li>
+            <li><a href="#nasil">Nasıl çalışır</a></li>
+            <li><a href="#fiyatlar">Fiyatlar</a></li>
+            <li><a href="https://app.otovoi.com/signin">Panele giriş</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Yasal</h2>
+          <ul>
+            <li><a href="gizlilik.html" data-keep-brand>Gizlilik Politikası</a></li>
+            <li><a href="kullanim-kosullari.html" data-keep-brand>Kullanım Koşulları</a></li>
+            <li><a href="cerez-politikasi.html" data-keep-brand>Çerez Politikası</a></li>
+            <li><a href="kvkk.html" data-keep-brand>KVKK Aydınlatma</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>İletişim</h2>
+          <ul>
+            <li>Fenerbahçe, Growth Plaza, Iğrıp Sk. No: 13, 34726 Kadıköy, İstanbul, Türkiye</li>
+            <li><a href="mailto:destek@otovoi.com">destek@otovoi.com</a></li>
+            <li><a href="tel:+908502104715">+90 (850) 210 4715</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="shell site-footer__bottom">
+        <p>© <span data-year></span> Otovoi. Tüm hakları saklıdır.</p>
+        <p class="site-footer__legal-inline">
+          <a href="gizlilik.html" data-keep-brand>Gizlilik</a>
+          <span aria-hidden="true">·</span>
+          <a href="kullanim-kosullari.html" data-keep-brand>Koşullar</a>
+          <span aria-hidden="true">·</span>
+          <a href="cerez-politikasi.html" data-keep-brand>Çerezler</a>
+        </p>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/905449782811?text=Merhaba%21%20Otovoi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="WhatsApp ile iletişime geç"
+    >
+      <span class="whatsapp-fab__label" aria-hidden="true">Hemen iletişime geçin!</span>
+      <span class="whatsapp-fab__icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none" viewBox="0 0 28 28">
+          <g clip-path="url(#whatsapp-clip-home)">
+            <path fill="#E0E0E0" d="M23.876 4.07A13.88 13.88 0 0 0 2.03 20.81L.062 28l7.358-1.929a13.87 13.87 0 0 0 6.632 1.69h.006a13.88 13.88 0 0 0 9.818-23.692Zm-9.818 21.347h-.004c-2.066 0-4.094-.555-5.872-1.608l-.42-.25-4.367 1.145 1.165-4.256-.275-.436a11.536 11.536 0 1 1 9.773 5.404Z"/>
+            <path fill="#fff" fill-rule="evenodd" d="M10.63 7.984c-.258-.571-.528-.583-.772-.593-.2-.008-.429-.008-.657-.008a1.26 1.26 0 0 0-.914.43 3.843 3.843 0 0 0-1.2 2.858c0 1.687 1.228 3.317 1.4 3.545.17.23 2.371 3.8 5.855 5.175 2.896 1.142 3.486.915 4.114.858.629-.058 2.028-.83 2.314-1.63.286-.8.286-1.487.2-1.63-.086-.143-.314-.229-.657-.4-.343-.172-2.028-1.001-2.343-1.115-.314-.115-.543-.172-.771.171-.229.344-.885 1.115-1.085 1.345-.2.229-.4.257-.743.086a9.378 9.378 0 0 1-2.757-1.702 10.326 10.326 0 0 1-1.907-2.373c-.2-.343-.021-.529.15-.7.155-.154.344-.4.515-.6.14-.174.256-.366.343-.572a.632.632 0 0 0-.028-.6c-.087-.172-.753-1.867-1.058-2.545Z" clip-rule="evenodd"/>
+            <path fill="#fff" d="M23.763 4.024A13.72 13.72 0 0 0 2.169 20.572L.223 27.681l7.273-1.907a13.71 13.71 0 0 0 6.556 1.67h.006a13.72 13.72 0 0 0 9.705-23.42Zm-9.705 21.103h-.003a11.39 11.39 0 0 1-5.804-1.59l-.417-.246-4.317 1.131 1.152-4.208-.271-.43a11.404 11.404 0 1 1 9.66 5.341v.002Z"/>
+          </g>
+          <defs>
+            <clipPath id="whatsapp-clip-home"><path fill="#fff" d="M.063 0h27.875v28H.063z"/></clipPath>
+          </defs>
+        </svg>
+      </span>
+    </a>
+
+  </body>
+</html>

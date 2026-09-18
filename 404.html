@@ -1,0 +1,48 @@
+<!doctype html>
+<html
+  lang="tr"
+  data-theme="otovoi"
+  data-wordmark="split"
+  data-mark="none"
+  data-site-font="inter"
+  data-logo-font="oxanium"
+  data-legal-page
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Anti-FOUC: set color scheme before first paint -->
+    <script>
+      (function () {
+        var s = localStorage.getItem('otovoi-color-scheme');
+        document.documentElement.dataset.colorScheme =
+          s === 'dark' ? 'dark' : s === 'light' ? 'light' :
+          window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }());
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayfa Bulunamadı | Otovoi</title>
+    <meta name="description" content="Aradığınız Otovoi sayfası bulunamadı. Ana sayfaya dönerek ürün ve hizmet bilgilerine ulaşabilirsiniz." />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="theme-color" content="#0b1218" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Oxanium:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/main-Ix8fTr6m.js"></script>
+    <script type="module" crossorigin src="/assets/legal-bMVgZ8SY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-d_SHgkln.css">
+  </head>
+  <body>
+    <main id="icerik" class="legal">
+      <article class="shell legal__article">
+        <p class="legal__kicker">Hata 404</p>
+        <h1>Sayfa bulunamadı.</h1>
+        <p>Aradığınız adres taşınmış, silinmiş veya hiç var olmamış olabilir.</p>
+        <p><a class="button button--primary" href="/">Otovoi ana sayfasına dön</a></p>
+      </article>
+    </main>
+  </body>
+</html>
